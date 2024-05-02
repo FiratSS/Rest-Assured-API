@@ -21,7 +21,7 @@ public class RequestSpecificationExample {
     public void beforeClass(){
 /*        requestSpecification = with().
                 baseUri("https://api.postman.com").
-                header("X-Api-Key", "REMOVED").
+                header("X-Api-Key", aaagit).
                 log().all();*/
         RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
         requestSpecBuilder.setBaseUri("https://api.postman.com");

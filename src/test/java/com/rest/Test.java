@@ -1,7 +1,5 @@
 package com.rest;
 
-import util.ConfigLoader;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
@@ -12,11 +10,7 @@ public class Test {
     public void test() {
         given().
                 baseUri("https://api.postman.com").
-<<<<<<< HEAD
                 header("x-api-key", APIKEY).
-=======
-                header("x-api-key", ConfigLoader.getProperty("api.key")).
->>>>>>> 0c43664 (Base Pojo updates and Removing API Key)
 
         when().
                 get("/workspaces").
